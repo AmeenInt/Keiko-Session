@@ -56,25 +56,21 @@ router.get('/', async (req, res) => {
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
-				   let session = await Qr_Code_By_Black_Castro.sendMessage(Qr_Code_By_Black_Castro.user.id, { text: '' + b64data });
+				   let session = await Qr_Code_By_Black_Castro.sendMessage(Qr_Code_By_Black_Castro.user.id, { text: 'KEIKO_V5_' + b64data });
 	
 				   let GHOST_MD_TEXT = `
-____________________________
-       𝐃𝐑𝐄𝐗-𝐌𝐃-𝐕2
-____________________________
-╔════◇
-║『 *YOU'VE CHOSEN DREX-MD-V2* 』
-║ You've Completed the First Step
-║ to Deploy a Whatsapp Bot.
-╚════════════════╝
-╔═════◇
-║ 『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ 𝐎𝐰𝐧𝐞𝐫: https://wa.me/254758682666
-║❒ 𝐑𝐞𝐩𝐨: https://github.com/drexmose/drex-Md-v2
-║❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P
-║ 💜💜💜
-╚════════════════╝
-Don't Forget To Give Star⭐ To My Repo`
+*🌩️HOLA USER I AM AMEENINT*
+
+
+ ☞ Welcome to AmeenInt World
+
+ ☞ Session Id For Keiko Bot
+
+ ☞ Support Group: https://chat.whatsapp.com/GVxT4w51GIU3sndNPZGTnw
+
+ ☞ Owner Number: wa.me/+916238768108
+
+ ☞ GitHub: https://github.com/AmeenRepo`
 	 await Qr_Code_By_Black_Castro.sendMessage(Qr_Code_Black_Castro.user.id,{text:GHOST_MD_TEXT},{quoted:session})
 
 
