@@ -1,5 +1,5 @@
 {
-    "description": "paircode",
+    "description": "Ameen Int Pair",
     "main": "ghost.js",
   "engines" : { 
     "npm" : ">=9.7.2",
@@ -8,7 +8,7 @@
     "scripts": {
     "start": "node ghost.js"
   },
-  "author": "Blvckcastro",
+  "author": "Ameen Int",
   "license": "GPL-3.0 license",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.5.0",
